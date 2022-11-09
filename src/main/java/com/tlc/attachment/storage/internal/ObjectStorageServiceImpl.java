@@ -22,11 +22,12 @@ import java.io.InputStream;
 
 /**
  * <p>
- *     Builds the bucket and gathers data about object uploads and download responses.
+ *     Interprets the object storage service-related activities.
  * </p>
  *
- * @author ThalaimalaiPandiyanT
+ * @author ThalaimalaiPandiyan T
  * @version 1.0
+ * @see com.tlc.attachment.service.ObjectStorageService
  */
 public class ObjectStorageServiceImpl implements ObjectStorageService {
 
@@ -84,9 +85,9 @@ public class ObjectStorageServiceImpl implements ObjectStorageService {
     /**
      * {@inheritDoc}
      *
-     * @param versionId  represents the version id of the object
+     * @param versionId  represents the specific version of the object
      * @param objectName represents the name of the object
-     * @return the object download response information
+     * @return the {@link ObjectDownloadResponse} object information
      */
     @Override
     public ObjectDownloadResponse downloadObject(final String versionId, final String objectName) {
@@ -106,9 +107,9 @@ public class ObjectStorageServiceImpl implements ObjectStorageService {
     /**
      * {@inheritDoc}
      *
-     * @param inputStream represents the {@link java.io.InputStream} that contains the object data
+     * @param inputStream represents the {@link java.io.InputStream} containing the object data
      * @param objectName  represents the name of the object
-     * @return the object upload response information
+     * @return the {@link ObjectUploadResponse} object information
      */
     @Override
     public ObjectUploadResponse uploadObject(final InputStream inputStream, final String objectName) {
@@ -121,12 +122,12 @@ public class ObjectStorageServiceImpl implements ObjectStorageService {
 
     /**
      * <p>
-     *     Upload an input stream of a given size and obtains data on the object upload response.
+     *     Upload the object in the path.
      * </p>
      *
-     * @param inputStream represents the {@link java.io.InputStream} that contains the object data
+     * @param inputStream represents the {@link java.io.InputStream} containing the object data
      * @param objectName  represents the name of the object
-     * @return the object upload response information
+     * @return the {@link ObjectUploadResponse} object information
      */
     private ObjectUploadResponse getUploadResponse(final InputStream inputStream, final String objectName) {
         try (inputStream) {

@@ -5,23 +5,23 @@ import java.nio.file.Path;
 
 /**
  * <p>
- *     Provides file storage service.
+ *     Provides file storage services.
  * </p>
  *
- * @author ThalaimalaiPandiyanT
+ * @author ThalaimalaiPandiyan T
  * @version 1.0
  */
 public interface FileStorageService {
 
     /**
      * <p>
-     *     Uploads the file with the given credentials.
+     *     Uploads the file in the path.
      * </p>
      *
-     * @param inputStream represents the {@link java.io.InputStream} that contains the object data
+     * @param inputStream represents the {@link InputStream} containing the object data
      * @param extension   represents the file type
-     * @param suffixPath  represents the directory path
-     * @return the suffix path of the file
+     * @param suffixPath  represents the path in which the file uploaded
+     * @return the uploaded path of the file
      */
     Path uploadFile(final InputStream inputStream, final String extension, final String suffixPath);
 

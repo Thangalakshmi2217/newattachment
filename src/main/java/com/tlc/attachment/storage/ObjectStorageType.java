@@ -2,8 +2,7 @@ package com.tlc.attachment.storage;
 
 /**
  * <p>
- *     An enum that contains the {@link ObjectStorageType} is a constant object storage service which stores and
- *     retrieves any data.
+ *     An enum which holds the object storage service, that retrieves and stores the data.
  * </p>
  *
  * @author Thalaimalaipandiyan T

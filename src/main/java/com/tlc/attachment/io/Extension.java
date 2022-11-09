@@ -2,7 +2,7 @@ package com.tlc.attachment.io;
 
 /**
  * <p>
- *     An enum that contains the constant {@link Extension} that specifically designates the file type.
+ *     An enum which contains the file extension, refers the file type.
  * </p>
  *
  * @author ThalaimalaiPandiyan T

@@ -4,14 +4,14 @@ import java.io.InputStream;
 
 /**
  * <p>
- *     {@code File} contains the object data related information.
+ *     {@code File} which contains the object data related information.
  * </p>
  *
- * @param inputStream represents the {@link java.io.InputStream} that contains the object data
+ * @param inputStream represents an {@link java.io.InputStream} containing the object data
  * @param name        represents the name of the file
  * @param extension   represents the file type
  * @param size        represents the file size
- * @param mediaType   indicates the file media type (MIME type - media type)
+ * @param mediaType   indicates the standard MIME type describing the format of the contents
  *
  * @author Sundar
  * @version 1.0

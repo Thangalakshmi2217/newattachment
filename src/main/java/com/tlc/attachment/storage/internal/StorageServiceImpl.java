@@ -15,11 +15,12 @@ import java.util.Map;
 
 /**
  * <p>
- *     Enables and disables the storage service and retrieves the file and object storage service.
+ *     Enables and disables the storage service.
  * </p>
  *
- * @author ThalaimalaiPandiyanT
+ * @author ThalaimalaiPandiyan T
  * @version 1.0
+ * @see com.tlc.attachment.service.StorageService
  */
 public class StorageServiceImpl implements StorageService, Service {
 
@@ -29,7 +30,7 @@ public class StorageServiceImpl implements StorageService, Service {
 
     /**
      * <p>
-     *     Storage service gets initialized.
+     *     Storage service gets activated.
      * </p>
      *
      * @param input represents the string as both key and value
@@ -58,7 +59,7 @@ public class StorageServiceImpl implements StorageService, Service {
     /**
      * {@inheritDoc}
      *
-     * @return the {@link ObjectStorageService}
+     * @return the {@link ObjectStorageService} object
      */
     @Override
     public ObjectStorageService getObjectStorageService() {
@@ -68,7 +69,7 @@ public class StorageServiceImpl implements StorageService, Service {
     /**
      * {@inheritDoc}
      *
-     * @return the {@link FileStorageService}
+     * @return the {@link FileStorageService} object
      */
     @Override
     public FileStorageService getFileStorageService() {

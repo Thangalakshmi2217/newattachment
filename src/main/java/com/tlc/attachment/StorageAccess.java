@@ -65,10 +65,10 @@ public class StorageAccess implements BundleActivator {
 
     /**
      * <p>
-     *     Registers the storage service and initializes the service.
+     *     Registers the storage service.
      * </p>
      *
-     * @param service represents the {@link StorageService}
+     * @param service represents the {@link StorageService} object
      */
     private static void register(final StorageService service) {
         if (!REFERENCE.compareAndSet(null, service)) {
@@ -78,7 +78,7 @@ public class StorageAccess implements BundleActivator {
 
     /**
      * <p>
-     *     When the storage access is deactivated, the storage service is unregistered.
+     *     Unregisters the storage service.
      * </p>
      *
      * @return the storage service object
@@ -89,7 +89,7 @@ public class StorageAccess implements BundleActivator {
 
     /**
      * <p>
-     *     Gets the storage service
+     *     Gets the storage service.
      * </p>
      *
      * @return the storage service

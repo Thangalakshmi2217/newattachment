@@ -7,10 +7,10 @@ import java.util.Objects;
 
 /**
  * <p>
- *     {@code ObjectStorageConfig} creates the client with the given credentials.
+ *     Provides object storage services.
  * </p>
  *
- * @author ThalaimalaiPandiyanT
+ * @author ThalaimalaiPandiyan T
  * @version 1.0
  */
 public class ObjectStorageConfig {
@@ -32,7 +32,7 @@ public class ObjectStorageConfig {
      *     Gets the client.
      * </p>
      *
-     * @return the client
+     * @return the object storage server client
      */
     public MinioClient getClient() {
         return minioClient;

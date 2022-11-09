@@ -6,18 +6,19 @@ import com.tlc.commons.code.ErrorCode;
 import com.tlc.commons.code.ErrorCodes;
 import com.tlc.commons.util.Env;
 
-import java.io.*;//todo
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.UUID;
 
 /**
  * <p>
- *     Obtains and uploads the file.
+ *     Implements the file storage service-related activities.
  * </p>
  *
- * @author ThalaimalaiPandiyanT
+ * @author ThalaimalaiPandiyan T
  * @version 1.0
+ * @see com.tlc.attachment.service.FileStorageService
  */
 public class FileStorageServiceImpl implements FileStorageService {
 
@@ -44,10 +45,10 @@ public class FileStorageServiceImpl implements FileStorageService {
     /**
      * {@inheritDoc}
      *
-     * @param inputStream represents the {@link java.io.InputStream} that contains the object data
+     * @param inputStream represents the {@link java.io.InputStream} containing the object data
      * @param extension   represents the file type
-     * @param suffixPath  represents the directory path
-     * @return the resulting path of a {@link File}
+     * @param suffixPath  represents the uploaded file path
+     * @return the uploaded path of the file
      */
     @Override
     public final Path uploadFile(final InputStream inputStream, final String extension, final String suffixPath) {
@@ -70,14 +71,14 @@ public class FileStorageServiceImpl implements FileStorageService {
 
     /**
      * <p>
-     *     Gets the file with the available name in the designated directories and path.
+     *     Retrieves the file with the specified name from the file path.
      * </p>
      *
-     * @param suffixPath represents the directory path
+     * @param suffixPath represents the path of the file
      * @param extension  represents the file type
-     * @return the suffix path of a file
+     * @return the path of the created file
      */
-    private Path getFileWithAvailableName(final String suffixPath, final String extension) {
+    private Path  getFileWithAvailableName(final String suffixPath, final String extension) {
         final String filePrefixPath = String.format("%s%s%s", FILE_DIRECTORY, java.io.File.separator, suffixPath);
 
         try {

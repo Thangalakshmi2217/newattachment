@@ -2,10 +2,10 @@ package com.tlc.attachment.service;
 
 /**
  * <p>
- *     Provides the storage service.
+ *     Provides storage services.
  * </p>
  *
- * @author ThalaimalaiPandiyanT
+ * @author ThalaimalaiPandiyan T
  * @version 1.0
  */
 public interface StorageService {
@@ -15,7 +15,7 @@ public interface StorageService {
      *     Gets the object storage service.
      * </p>
      *
-     * @return the {@link ObjectStorageService}
+     * @return the {@link ObjectStorageService} object
      */
     ObjectStorageService getObjectStorageService();
 
@@ -24,7 +24,7 @@ public interface StorageService {
      *     Gets the file storage service.
      * </p>
      *
-     * @return the {@link FileStorageService}
+     * @return the {@link FileStorageService} object
      */
     FileStorageService getFileStorageService();
 

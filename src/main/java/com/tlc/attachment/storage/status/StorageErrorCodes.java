@@ -5,7 +5,7 @@ import com.tlc.commons.code.ErrorCodeProvider;
 
 /**
  * <p>
- *     An enum containing {@link StorageErrorCodes} which stores the status error codes as a separate group.
+ *     An enum which holds {@link StorageErrorCodes} that stores the status error codes.
  * </p>
  *
  * @author ThalaimalaiPandiyanT
@@ -31,6 +31,13 @@ public enum StorageErrorCodes implements ErrorCodeProvider {
         this.code = StorageErrorCodeGroup.GROUP.getConvertedCode(localCode);
     }
 
+    /**
+     * <p>
+     *     Gets the code.
+     * </p>
+     *
+     * @return the code
+     */
     @Override
     public int getCode()
     {
@@ -39,12 +46,19 @@ public enum StorageErrorCodes implements ErrorCodeProvider {
 
     /**
      * <p>
-     *
+     *     Storage error codes are stored as a separate group.
      * </p>
      */
     private static class StorageErrorCodeGroup implements ErrorCodeGroup {
         private static final ErrorCodeGroup GROUP = new StorageErrorCodeGroup();
 
+        /**
+         * <p>
+         *     Gets the prefix.
+         * </p>
+         *
+         * @return the error code
+         */
         @Override
         public int getPrefix()
         {

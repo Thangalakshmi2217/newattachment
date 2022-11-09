@@ -7,33 +7,33 @@ import java.io.InputStream;
 
 /**
  * <p>
- *     Provides the object storage service.
+ *     Provides object storage services.
  * </p>
  *
- * @author ThalaimalaiPandiyanT
+ * @author ThalaimalaiPandiyan T
  * @version 1.0
  */
 public interface ObjectStorageService {
 
     /**
      * <p>
-     *     Uploads the object
+     *     Uploads the object in the path.
      * </p>
      *
-     * @param inputStream represents the {@link java.io.InputStream} that contains the object data
+     * @param inputStream represents the {@link java.io.InputStream} containing the object data
      * @param objectName  represents the name of the object
-     * @return the object upload response information
+     * @return the {@link ObjectUploadResponse} object
      */
     ObjectUploadResponse uploadObject(final InputStream inputStream, final String objectName);
 
     /**
      * <p>
-     *      Downloads the object given in the bucket.
+     *      Downloads the object using version id and the object name.
      * </p>
      *
-     * @param versionId  represents the version id of the object
+     * @param versionId  represents the specific version of the object
      * @param objectName represents the name of the object
-     * @return the object download response information
+     * @return the {@link ObjectDownloadResponse} object
      */
     ObjectDownloadResponse downloadObject(final String versionId, final String objectName);
 
