@@ -5,7 +5,7 @@ package com.tlc.attachment.service;
  *     Provides storage services.
  * </p>
  *
- * @author ThalaimalaiPandiyan T
+ * @author ThalaimalaiPandiyanT
  * @version 1.0
  */
 public interface StorageService {

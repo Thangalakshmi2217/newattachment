@@ -4,10 +4,10 @@ import java.io.InputStream;
 
 /**
  * <p>
- *     {@code File} which contains the object data related information.
+ *     {@code File} which contains the object details related information.
  * </p>
  *
- * @param inputStream represents an {@link java.io.InputStream} containing the object data
+ * @param inputStream represents an {@link java.io.InputStream} which contains the object data
  * @param name        represents the name of the file
  * @param extension   represents the file type
  * @param size        represents the file size

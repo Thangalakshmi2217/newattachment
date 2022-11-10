@@ -18,7 +18,7 @@ import java.util.Map;
  *     Enables and disables the storage service.
  * </p>
  *
- * @author ThalaimalaiPandiyan T
+ * @author ThalaimalaiPandiyanT
  * @version 1.0
  * @see com.tlc.attachment.service.StorageService
  */
@@ -33,7 +33,7 @@ public class StorageServiceImpl implements StorageService, Service {
      *     Storage service gets activated.
      * </p>
      *
-     * @param input represents the string as both key and value
+     * @param input represents the string mapped as both key and value
      */
     @Override
     public void start(final Map<String, String> input) {

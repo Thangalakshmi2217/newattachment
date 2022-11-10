@@ -5,7 +5,7 @@ package com.tlc.attachment.io;
  *     An enum which contains the file extension, refers the file type.
  * </p>
  *
- * @author ThalaimalaiPandiyan T
+ * @author ThalaimalaiPandiyanT
  * @version 1.0
  */
 public enum Extension {

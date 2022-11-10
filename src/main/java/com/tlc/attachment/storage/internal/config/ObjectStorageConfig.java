@@ -10,7 +10,7 @@ import java.util.Objects;
  *     Provides object storage services.
  * </p>
  *
- * @author ThalaimalaiPandiyan T
+ * @author ThalaimalaiPandiyanT
  * @version 1.0
  */
 public class ObjectStorageConfig {

@@ -8,7 +8,7 @@ import java.nio.file.Path;
  *     Provides file storage services.
  * </p>
  *
- * @author ThalaimalaiPandiyan T
+ * @author ThalaimalaiPandiyanT
  * @version 1.0
  */
 public interface FileStorageService {
@@ -18,7 +18,7 @@ public interface FileStorageService {
      *     Uploads the file in the path.
      * </p>
      *
-     * @param inputStream represents the {@link InputStream} containing the object data
+     * @param inputStream represents the {@link InputStream} which contains the object data
      * @param extension   represents the file type
      * @param suffixPath  represents the path in which the file uploaded
      * @return the uploaded path of the file

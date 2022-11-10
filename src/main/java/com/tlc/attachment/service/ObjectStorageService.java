@@ -10,7 +10,7 @@ import java.io.InputStream;
  *     Provides object storage services.
  * </p>
  *
- * @author ThalaimalaiPandiyan T
+ * @author ThalaimalaiPandiyanT
  * @version 1.0
  */
 public interface ObjectStorageService {
@@ -20,7 +20,7 @@ public interface ObjectStorageService {
      *     Uploads the object in the path.
      * </p>
      *
-     * @param inputStream represents the {@link java.io.InputStream} containing the object data
+     * @param inputStream represents the {@link java.io.InputStream} which contains the object data
      * @param objectName  represents the name of the object
      * @return the {@link ObjectUploadResponse} object
      */
@@ -31,7 +31,7 @@ public interface ObjectStorageService {
      *      Downloads the object using version id and the object name.
      * </p>
      *
-     * @param versionId  represents the specific version of the object
+     * @param versionId  represents the version id of the object
      * @param objectName represents the name of the object
      * @return the {@link ObjectDownloadResponse} object
      */

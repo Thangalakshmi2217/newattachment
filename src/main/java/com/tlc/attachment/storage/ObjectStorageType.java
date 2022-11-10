@@ -2,10 +2,10 @@ package com.tlc.attachment.storage;
 
 /**
  * <p>
- *     An enum which holds the object storage service, that retrieves and stores the data.
+ *     An enum which holds the object storage service refers to the various storage services.
  * </p>
  *
- * @author Thalaimalaipandiyan T
+ * @author ThalaimalaipandiyanT
  * @version 1.0
  */
 public enum ObjectStorageType {

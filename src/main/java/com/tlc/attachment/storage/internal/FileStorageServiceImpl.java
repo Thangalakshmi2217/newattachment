@@ -13,10 +13,10 @@ import java.util.UUID;
 
 /**
  * <p>
- *     Implements the file storage service-related activities.
+ *     Carries out the provided file storage-related services.
  * </p>
  *
- * @author ThalaimalaiPandiyan T
+ * @author ThalaimalaiPandiyanT
  * @version 1.0
  * @see com.tlc.attachment.service.FileStorageService
  */
@@ -45,7 +45,7 @@ public class FileStorageServiceImpl implements FileStorageService {
     /**
      * {@inheritDoc}
      *
-     * @param inputStream represents the {@link java.io.InputStream} containing the object data
+     * @param inputStream represents the {@link java.io.InputStream} which contains the object data
      * @param extension   represents the file type
      * @param suffixPath  represents the uploaded file path
      * @return the uploaded path of the file

@@ -5,11 +5,11 @@ package com.tlc.attachment.storage;
  *    {@code ObjectUploadResponse} contains the object upload response information.
  * </p>
  *
- * @param versionId     represents the specific version of the object
+ * @param versionId     represents the version id of the object
  * @param objectName    represents the name of the object
  * @param storageSource represents the storage service which stores the data
  *
- * @author ThalaimalaiPandiyan T
+ * @author ThalaimalaiPandiyanT
  * @version 1.0
  */
 public record ObjectUploadResponse(String versionId,String objectName,String storageSource){

@@ -22,10 +22,10 @@ import java.io.InputStream;
 
 /**
  * <p>
- *     Interprets the object storage service-related activities.
+ *     Carries out the provided object storage-related services.
  * </p>
  *
- * @author ThalaimalaiPandiyan T
+ * @author ThalaimalaiPandiyanT
  * @version 1.0
  * @see com.tlc.attachment.service.ObjectStorageService
  */
@@ -85,9 +85,9 @@ public class ObjectStorageServiceImpl implements ObjectStorageService {
     /**
      * {@inheritDoc}
      *
-     * @param versionId  represents the specific version of the object
+     * @param versionId  represents the version id of the object
      * @param objectName represents the name of the object
-     * @return the {@link ObjectDownloadResponse} object information
+     * @return the {@link ObjectDownloadResponse} object
      */
     @Override
     public ObjectDownloadResponse downloadObject(final String versionId, final String objectName) {
@@ -107,9 +107,9 @@ public class ObjectStorageServiceImpl implements ObjectStorageService {
     /**
      * {@inheritDoc}
      *
-     * @param inputStream represents the {@link java.io.InputStream} containing the object data
+     * @param inputStream represents the {@link java.io.InputStream} which contains the object data
      * @param objectName  represents the name of the object
-     * @return the {@link ObjectUploadResponse} object information
+     * @return the {@link ObjectUploadResponse} object
      */
     @Override
     public ObjectUploadResponse uploadObject(final InputStream inputStream, final String objectName) {
@@ -125,7 +125,7 @@ public class ObjectStorageServiceImpl implements ObjectStorageService {
      *     Upload the object in the path.
      * </p>
      *
-     * @param inputStream represents the {@link java.io.InputStream} containing the object data
+     * @param inputStream represents the {@link java.io.InputStream} which contains the object data
      * @param objectName  represents the name of the object
      * @return the {@link ObjectUploadResponse} object information
      */

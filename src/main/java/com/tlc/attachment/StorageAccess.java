@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicReference;
  *     Activates and deactivates the storage access; registers and unregisters the storage service.
  * </p>
  *
- * @author ThalaimalaiPandiyan T
+ * @author ThalaimalaiPandiyanT
  * @version 1.0
  */
 public class StorageAccess implements BundleActivator {

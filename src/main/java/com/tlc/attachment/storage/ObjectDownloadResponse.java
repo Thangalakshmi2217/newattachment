@@ -7,9 +7,9 @@ import java.io.InputStream;
  *     {@code ObjectDownloadResponse} contains the object download response information.
  * </p>
  *
- * @param stream interprets the information in the object download response
+ * @param stream represents the {@link java.io.InputStream} which contains the object data information
  *
- * @author ThalaimalaiPandiyan T
+ * @author ThalaimalaiPandiyanT
  * @version 1.0
  */
 public record ObjectDownloadResponse(InputStream stream) {
