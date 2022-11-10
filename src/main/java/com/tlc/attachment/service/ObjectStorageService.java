@@ -17,7 +17,7 @@ public interface ObjectStorageService {
 
     /**
      * <p>
-     *     Uploads the object in the path.
+     *     Uploads the object using the object name.
      * </p>
      *
      * @param inputStream represents the {@link java.io.InputStream} which contains the object data

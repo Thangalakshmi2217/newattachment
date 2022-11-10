@@ -22,7 +22,7 @@ import java.io.InputStream;
 
 /**
  * <p>
- *     Carries out the provided object storage-related services.
+ *     Executes the provided object storage-related services.
  * </p>
  *
  * @author ThalaimalaiPandiyanT
@@ -122,12 +122,12 @@ public class ObjectStorageServiceImpl implements ObjectStorageService {
 
     /**
      * <p>
-     *     Upload the object in the path.
+     *     Upload the object using the object name.
      * </p>
      *
      * @param inputStream represents the {@link java.io.InputStream} which contains the object data
      * @param objectName  represents the name of the object
-     * @return the {@link ObjectUploadResponse} object information
+     * @return the {@link ObjectUploadResponse} object
      */
     private ObjectUploadResponse getUploadResponse(final InputStream inputStream, final String objectName) {
         try (inputStream) {

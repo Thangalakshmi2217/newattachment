@@ -13,7 +13,7 @@ import java.util.UUID;
 
 /**
  * <p>
- *     Carries out the provided file storage-related services.
+ *     Executes the provided file storage-related services.
  * </p>
  *
  * @author ThalaimalaiPandiyanT
@@ -33,7 +33,7 @@ public class FileStorageServiceImpl implements FileStorageService {
 
     /**
      * <p>
-     *     Gets the instance of {@link FileStorageServiceImpl}
+     *     Gets the instance of {@link FileStorageServiceImpl}.
      * </p>
      *
      * @return the instance of {@link FileStorageServiceImpl}
@@ -71,7 +71,7 @@ public class FileStorageServiceImpl implements FileStorageService {
 
     /**
      * <p>
-     *     Retrieves the file with the specified name from the file path.
+     *     Retrieves the file with the specified name.
      * </p>
      *
      * @param suffixPath represents the path of the file

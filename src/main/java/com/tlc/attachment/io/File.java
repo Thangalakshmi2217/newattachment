@@ -4,7 +4,7 @@ import java.io.InputStream;
 
 /**
  * <p>
- *     {@code File} which contains the object details related information.
+ *     {@code File} which contains the file details.
  * </p>
  *
  * @param inputStream represents an {@link java.io.InputStream} which contains the object data

@@ -7,7 +7,7 @@ import java.util.Objects;
 
 /**
  * <p>
- *     Provides object storage services.
+ *     Creates the client with the given credentials.
  * </p>
  *
  * @author ThalaimalaiPandiyanT
